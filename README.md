@@ -138,50 +138,38 @@ Ahora creamos para error con cat > error.html y para verificar que esté todo bi
 El comando sync compara el directorio de origen con tu bucket S3 y carga solo archivos nuevos o modificados. Entonces puedes cargar ambos archivos fácilmente a través del siguiente comando.
 aws s3 sync ./ s3://tu\_nombre\_de\_usuario/ --acl public-read
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.025.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3%20sync.png)
 
 La salida nos dice que se ha cargado correctamente los archivos **error.html y index.html al bucket S3 nikolaihuarcaya,también quiero agregar que se encuentra el hello por que se hizo en el webpages.**
 
 ¿Cuál es la salida? Ahora habilitamos el bucket para alojamiento de sitios web estáticos con las siguientes instrucciones.
 
 aws s3 website s3://tu\_nombre\_de\_usuario/
-
 --index-document index.html
-
 --error-document error.html
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.026.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3%20website.png)
 
 **Observa cómo la instrucción enlaza ambos archivos con sus usos. En el navegador web de tu VM, acceda a la URL**
-
-
-
-
-
-
-
-
-
 
 http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.com/.
 
 ¿Qué viste en el navegador? ¿Por qué?
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.027.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Index%20page.png)
 
 **Lo que se puede observar en el navegador fue el mensaje del archivo index.html que se puso con anterioridad.**
 
-` `Ahora, acceda a http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.com/ hello.html
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.028.png)
+Ahora, acceda a http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.com/ hello.html
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Hello%20page.png)
 
 ¿Qué viste en el navegador?
 
 **Lo que podemos observar es el mensaje que pusimos en el hello.html**
 
 
-` `A continuación, acceda a
-
+A continuación, acceda a
 http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.com/2.html. 
 
 ¿Qué viste en el navegador? ![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.029.png)
