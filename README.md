@@ -106,7 +106,7 @@ aws s3 cp hello.html s3://tu\_nombre\_de\_usuario --acl public-read
 
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3.png)
 
-5. Dado que se puede acceder a tu objeto s3 a través de Internet, probémoslo. En el navegador web de tu máquina virtual (u otra9 accede a la URL [http://s3.amazonaws.com/nikolaihuarcaya/hello.html.](http://s3.amazonaws.com/nikolaihuarcaya/hello.html) ¿Qué viste en el navegador?
+5. Dado que se puede acceder a tu objeto s3 a través de Internet, probémoslo. En el navegador web de tu máquina virtual (u otra9 accede a la URL [http://s3.amazonaws.com/tu_usuario/hello.html.](http://s3.amazonaws.com/tu_usuario/hello.html) ¿Qué viste en el navegador?
 
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Hello%20World.png)
 
@@ -114,13 +114,15 @@ Al momento de acceder a la página web con el URL que nos dio y obviamente modif
 
 
 # **Parte 2: alojamiento de sitios web estáticos con S3**
-1. Podemos usar el bucket como almacenamiento de sitios web estáticos. Experimentamos con eso aquí. Crea dos archivos html en el directorio actual llamados index.html y error.html. El contenido de los dos archivos se muestra a continuación.
+6. Podemos usar el bucket como almacenamiento de sitios web estáticos. Experimentamos con eso aquí. Crea dos archivos html en el directorio actual llamados index.html y error.html. El contenido de los dos archivos se muestra a continuación.
+   
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/C%C3%B3digos.png)   
 
 <html><body>
 This is an index page!
 </body></html>
 
-**Primero creamos para index con cat > index.html y para verificar que esté todo bien lo llamamos con cat.![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.023.png)**
+**Primero creamos para index con cat > index.html y para verificar que esté todo bien lo llamamos con cat.![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Creaci%C3%B3n.png)**
 
 
 
