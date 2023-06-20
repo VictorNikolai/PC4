@@ -172,7 +172,7 @@ Ahora, acceda a http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.co
 A continuación, acceda a
 http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.com/2.html. 
 
-¿Qué viste en el navegador? ![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.029.png)
+¿Qué viste en el navegador? ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Sorry.png)
 
 Lo que se puede observar es el mensaje que pusimos en el error.html
 
