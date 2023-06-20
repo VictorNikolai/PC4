@@ -47,11 +47,9 @@ aws s3 ls s3://tu\_nombre\_de\_usuario
 4. Crea un directorio llamado páginas web (mkdir webpages) y cd en ese directorio.
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Parte1.4.png)
 
-Crea un archivo html simple llamado hello.html con el siguiente contenido.
+Crea un archivo html simple llamado hello.html con el siguiente contenido.**Para la creación del archivo hello.html usaremos el comando cat > hello.html**
 
-**Para la creación del archivo hello.html usaremos el comando cat > hello.html**
-
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.009.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/cat%20%20hello.png)
 
 **Para que posteriormente dentro de este archivo pongamos lo siguiente :** 
 
