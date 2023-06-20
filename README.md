@@ -18,7 +18,7 @@ Comunicación de Datos y Redes
 4. Sube a la plataforma de Blackboard el enlace de github donde están todas tus respuestas. No olvides colocar tu nombre y apellido antes de subir el enlace de tus respuestas a la plataforma
 5. Cualquier evidencia de copia elimina el examen se informará de la situación a la coordinación.
 
-**S3**
+# **S3**
 
 En este laboratorio, se estudiará el almacenamiento de Amazon S3. Utilizarás los comandos aws s3 y s3api para administrar datos en Amazon S3. Amazon S3 es un almacenamiento de objetos accesible a través de Internet.
 
