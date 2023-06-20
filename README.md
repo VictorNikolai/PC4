@@ -122,14 +122,16 @@ Al momento de acceder a la página web con el URL que nos dio y obviamente modif
 This is an index page!
 </body></html>
 
-**Primero creamos para index con cat > index.html y para verificar que esté todo bien lo llamamos con cat.![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Creaci%C3%B3n.png)**
+**Primero creamos para index con cat > index.html y para verificar que esté todo bien lo llamamos con cat.
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Creaci%C3%B3n.png)
 
 
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Error.png)   
 <html><body>
 Sorry, we can't find that page!
 </body></html>
-**Ahora creamos para error con cat > error.html y para verificar que esté todo bien lo llamamos con cat.![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/error%20cat.png)**
+**Ahora creamos para error con cat > error.html y para verificar que esté todo bien lo llamamos con cat.
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/error%20cat.png)
 
 El comando sync compara el directorio de origen con tu bucket S3 y carga solo archivos nuevos o modificados. Entonces puedes cargar ambos archivos fácilmente a través del siguiente comando.
 
