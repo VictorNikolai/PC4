@@ -44,9 +44,8 @@ aws s3 ls s3://tu\_nombre\_de\_usuario
 **Lo que podemos notar con el comando que pusimos es que no hay una salida ya que está vacío porque recién se ha creado un bucket y como es un bucket recién creado, no tiene objeto/archivos.**
 
 
-
-
-1. Crea un directorio llamado páginas web (mkdir webpages) y cd en ese directorio.![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.008.png)
+4. Crea un directorio llamado páginas web (mkdir webpages) y cd en ese directorio.
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Parte1.4.png)
 
 Crea un archivo html simple llamado hello.html con el siguiente contenido.
 
