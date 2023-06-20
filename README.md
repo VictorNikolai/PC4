@@ -106,7 +106,7 @@ aws s3 cp hello.html s3://tu\_nombre\_de\_usuario --acl public-read
 
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3.png)
 
-5. Dado que se puede acceder a tu objeto s3 a través de Internet, probémoslo. En el navegador web de tu máquina virtual (u otra9 accede a la URL [http://s3.amazonaws.com/tu_nombre_de_usuario/hello.html.](http://s3.amazonaws.com/nikolaihuarcaya/hello.html) ¿Qué viste en el navegador?
+5. Dado que se puede acceder a tu objeto s3 a través de Internet, probémoslo. En el navegador web de tu máquina virtual (u otra9 accede a la URL [http://s3.amazonaws.com/nikolaihuarcaya/hello.html.](http://s3.amazonaws.com/nikolaihuarcaya/hello.html) ¿Qué viste en el navegador?
 
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Hello%20World.png)
 
