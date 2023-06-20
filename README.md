@@ -1,7 +1,7 @@
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Imagen1.png)
 
- PC4
-#  **Departamento Académico de Ingeniería C8280 -Comunicación de Datos y Redes**
+#  PC4
+ **Departamento Académico de Ingeniería C8280 -Comunicación de Datos y Redes**
 
 
 Comunicación de Datos y Redes
