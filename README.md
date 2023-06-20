@@ -125,22 +125,10 @@ This is an index page!
 **Primero creamos para index con cat > index.html y para verificar que esté todo bien lo llamamos con cat.![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Creaci%C3%B3n.png)**
 
 
-
-
-
-
-
-
-
-
-
-
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Error.png)   
 <html><body>
-
 Sorry, we can't find that page!
-
 </body></html>
-
 **Ahora creamos para error con cat > error.html y para verificar que esté todo bien lo llamamos con cat.![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.024.png)**
 
 El comando sync compara el directorio de origen con tu bucket S3 y carga solo archivos nuevos o modificados. Entonces puedes cargar ambos archivos fácilmente a través del siguiente comando.
