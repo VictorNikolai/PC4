@@ -66,18 +66,17 @@ Carga el archivo en tu bucket s3 y póngalo a disposición del público con lo s
 
 Primeramente nos saldrá error file y para que este bucket esté en público tendremos que hacer los siguientes pasos  
 
-`   `**4.1.- Tenemos que dirigirnos a Amazon S3 / en la imagen ya sale publico por que ya se hizo el cambio pero se mencionara los pasos para ponerlo en público.**
+   **4.1.- Tenemos que dirigirnos a Amazon S3 / en la imagen ya sale publico por que ya se hizo el cambio pero se mencionara los pasos para ponerlo en público.**
 
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/AmazonS3.png)
 
-**4.2.- Hacemos click en el Buckets creado (nikolaihuarcaya) para luego dirigirnos a permisos .**
+   **4.2.- Hacemos click en el Buckets creado (nikolaihuarcaya) para luego dirigirnos a permisos .**
 
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Permisos.png)
 
-**4.3.-Vamos a “Bloquear acceso público” y hacemos click en Editar para editarlo.**
+   **4.3.-Vamos a “Bloquear acceso público” y hacemos click en Editar para editarlo.**
 
 ![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.014.png)
-
 
 
 
