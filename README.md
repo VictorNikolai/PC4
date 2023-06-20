@@ -117,9 +117,7 @@ Al momento de acceder a la página web con el URL que nos dio y obviamente modif
 1. Podemos usar el bucket como almacenamiento de sitios web estáticos. Experimentamos con eso aquí. Crea dos archivos html en el directorio actual llamados index.html y error.html. El contenido de los dos archivos se muestra a continuación.
 
 <html><body>
-
 This is an index page!
-
 </body></html>
 
 **Primero creamos para index con cat > index.html y para verificar que esté todo bien lo llamamos con cat.![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.023.png)**
