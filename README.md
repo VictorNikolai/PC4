@@ -10,7 +10,7 @@ Comunicación de Datos y Redes
 
 **Indicaciones**
 
-**Amazon S3 - AWS Elastic Block Store (EBS)**
+**Amazon S3 - AWS Elastic Block Store (EBS)**
 
 1. Las respuestas deben ser explicadas, solo colocar resultados sin ninguna referencia no puntúa en las preguntas de la evaluación.
 1. Realiza una copia de este documento y coloca todas tus respuestas y sube a tu repositorio personal de github en formato markdown. Presenta capturas de pantalla del procedimiento y las explicaciones necesarias. No puntúa si solo se hace la presentación de imágenes.
@@ -30,7 +30,7 @@ Suponga que su directorio actual es /home/aws\_user (puedes cambiarlo). Envíe l
 
 ¿Cuál es la salida?
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.004.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Imagen4.png))
 
 **Este comando se utiliza para listar los objetos y los buckets que se encuentran en nuestra cuenta  de Amazon S3. Al ejecutar este comando, se recibirá una lista de los buckets existentes y los objetos almacenados dentro de cada bucket.**
 
