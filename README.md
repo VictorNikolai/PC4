@@ -37,13 +37,9 @@ Suponga que su directorio actual es /home/aws\_user (puedes cambiarlo). Envíe l
 
 **Este comando nos está indicando a la AWS CLI que deseas crear un nuevo bucket en Amazon S3 con un nombre en especifico y en este caso nosotros pusimos como *nombre\_de\_usuario nikolaihuarcaya.*. Primero nosotros tenemos que especificar que es mb, este significa make bucket y el prefijo s3:// indica que se trata de un bucket de S3 Al darle enter al comando, la salida será un mensaje: “make\_bucket:nikolaihuarcaya” . Eso nos da a entender que el bucket se creó correctamente en Amazon S3  con el nombre nikolaihuarcaya**
 
-1. Enumera el contenido del bucket a través del siguiente comando l
-
-`                `aws s3 ls s3://tu\_nombre\_de\_usuario
-
-` `¿Cuál es la salida?
-
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.006.png)![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.007.png)
+3. Enumera el contenido del bucket a través del siguiente comando l
+aws s3 ls s3://tu\_nombre\_de\_usuario
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Parte1.3.png)
 
 **Lo que podemos notar con el comando que pusimos es que no hay una salida ya que está vacío porque recién se ha creado un bucket y como es un bucket recién creado, no tiene objeto/archivos.**
 
