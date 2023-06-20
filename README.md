@@ -85,23 +85,13 @@ Primeramente nos saldrá error file y para que este bucket esté en público ten
 
 **4.5.-Cuando ya se realizó el cambio volvemos a entrar y podemos revisar que se guardó los cambios.**
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.016.png)
-**
-
-
-
-
-
-
-
-
-
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Volumen.png)
 
 
 
 **4.6.- Ahora nos dirigimos a propiedades de objetos y hacemos click en editar para habilitar el ACL.**
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.017.png)![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.018.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/CLI.png)![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/CL_configuraci%C3%B3n.png)
 
 **4.7.- Por último nos dirigimos a la lista de control de acceso (ACL) , para luego habilitarlos.**
 
