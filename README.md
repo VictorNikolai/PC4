@@ -172,72 +172,41 @@ Ahora, acceda a http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.co
 A continuación, acceda a
 http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.com/2.html. 
 
-¿Qué viste en el navegador? ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Sorry.png)
-
+¿Qué viste en el navegador?
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Sorry.png)
 Lo que se puede observar es el mensaje que pusimos en el error.html
-
 ¿Por qué?
-
 **Porque se está esperando en la configuración es que cuando accedes a cualquier URL que no corresponda a un archivo existente en tu sitio web estático.**
 
 
 
-
-
-
-
-
-
-
-1. Podemos definir reglas de redirección y agregar metadatos a los objetos en el bucket. Ejecuta el siguiente comando para hacerlo. Observa que este comando usa s3api, no s3.
-
+7. Podemos definir reglas de redirección y agregar metadatos a los objetos en el bucket. Ejecuta el siguiente comando para hacerlo. Observa que este comando usa s3api, no s3.
+   
 aws s3api put-object --bucket *tu\_nombre\_de\_usuario*
-
 --key hello.html
-
 --website-redirect-location [http://www.nku.edu/~haow1 ](http://www.nku.edu/~haow1)--acl public-read
-
 --metadata redirection\_creator=aws\_user
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.030.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3api%20put-object%20.png)
 
 
 Ahora http://*tu\_nombre\_de\_usuario*.s3-website-us-east-1.amazonaws.com/hello.html
 
 ¿Qué ves en el navegador? ¿Por qué?.
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.031.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/wei%20hao.png)
 
-**Veo que ya no sale el mensaje Hello word y aparece como que una información de una persona llamada wei hao.**
-
-
+**Lo que se puede ver es que ya no sale el mensaje Hello word y aparece como que una información de una persona llamada wei hao.**
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Para recuperar los metadatos de un objeto, usamos el subcomando head-object. Emite la siguiente instrucción.
+8. Para recuperar los metadatos de un objeto, usamos el subcomando head-object. Emite la siguiente instrucción.
 
 aws s3api head-object --bucket tu\_nombre\_de\_usuario --key hello.html
 
 ¿Cuál es la salida?
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.032.png)
-(EXPLICACIÓN MÁS ADELANTE)
-
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3api%20head-object.png)
+Este comando se utiliza para que se pueda mostrar la interfaz de línea de comandos (CLI) de Amazon Web Services (AWS) y para ejecutar el comando "head-object" en el servicio de almacenamiento en la nube S3.
 
 
 # **Parte 3: Limpieza**
