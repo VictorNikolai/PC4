@@ -95,29 +95,20 @@ Primeramente nos saldrá error file y para que este bucket esté en público ten
 
 **4.7.- Por último nos dirigimos a la lista de control de acceso (ACL) , para luego habilitarlos.**
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.019.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/CLI%20muestra.png)
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.020.png)
-
-
-
-
-
-
-
-
-
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Lista%20de%20control.png)
 
 
 Ahora ponemos el comando para ver si funcionaba los cambios:
 
 aws s3 cp hello.html s3://tu\_nombre\_de\_usuario --acl public-read
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.021.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3.png)
 
-1. Dado que se puede acceder a tu objeto s3 a través de Internet, probémoslo. En el navegador web de tu máquina virtual (u otra9 accede a la URL [http://s3.amazonaws.com/tu_nombre_de_usuario/hello.html.](http://s3.amazonaws.com/tu_nombre_de_usuario/hello.html) ¿Qué viste en el navegador?
+5. Dado que se puede acceder a tu objeto s3 a través de Internet, probémoslo. En el navegador web de tu máquina virtual (u otra9 accede a la URL [http://s3.amazonaws.com/tu_nombre_de_usuario/hello.html.](http://s3.amazonaws.com/tu_nombre_de_usuario/hello.html) ¿Qué viste en el navegador?
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.022.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Hello%20World.png)
 
 Al momento de acceder a la página web con el URL que nos dio y obviamente modificándolo nos sale **Amazon S3  / Hello World!**
 
