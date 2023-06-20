@@ -68,12 +68,6 @@ Carga el archivo en tu bucket s3 y póngalo a disposición del público con lo s
 
 
 
-
-
-
-
-
-
 ¿Cuál es la salida?
 
 Primeramente nos saldrá error file y para que este bucket esté en público tendremos que hacer los siguientes pasos  
