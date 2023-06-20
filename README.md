@@ -27,10 +27,7 @@ En este laboratorio, se estudiará el almacenamiento de Amazon S3. Utilizarás l
 Suponga que su directorio actual es /home/aws\_user (puedes cambiarlo). Envíe las siguientes instrucciones y responda las preguntas que siguen.
 
 1. Enumere todos los buckets propiedad del usuario a través del siguiente comando. aws s3 ls
-
-¿Cuál es la salida?
-
-![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Imagen4.png))
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Parte1.1.png))
 
 **Este comando se utiliza para listar los objetos y los buckets que se encuentran en nuestra cuenta  de Amazon S3. Al ejecutar este comando, se recibirá una lista de los buckets existentes y los objetos almacenados dentro de cada bucket.**
 
