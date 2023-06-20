@@ -56,7 +56,7 @@ Crea un archivo html simple llamado hello.html con el siguiente contenido.**Para
 
 **Si es que queremos verificar que lo que pusimos en el archivo hello.html se encuentre correctamente solo pondremos el comando cat hello.html**
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.011.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Verificaci%C3%B3n%20del%20cat.png)
 
 Carga el archivo en tu bucket s3 y póngalo a disposición del público con lo siguiente. aws s3 cp hello.html s3://tu\_nombre\_de\_usuario --acl public-read
 
