@@ -49,7 +49,7 @@ aws s3 ls s3://tu\_nombre\_de\_usuario
 
 Crea un archivo html simple llamado hello.html con el siguiente contenido.**Para la creación del archivo hello.html usaremos el comando cat > hello.html**
 
-![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/cat%20%20hello.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/cat%20hello_creaci%C3%B3n.png)
 
 **Para que posteriormente dentro de este archivo pongamos lo siguiente :** 
 
