@@ -13,10 +13,10 @@ Comunicación de Datos y Redes
 **Amazon S3 - AWS Elastic Block Store (EBS)**
 
 1. Las respuestas deben ser explicadas, solo colocar resultados sin ninguna referencia no puntúa en las preguntas de la evaluación.
-1. Realiza una copia de este documento y coloca todas tus respuestas y sube a tu repositorio personal de github en formato markdown. Presenta capturas de pantalla del procedimiento y las explicaciones necesarias. No puntúa si solo se hace la presentación de imágenes.
-1. De preferencia adiciona un video adicional explicando los pasos realizados. Utiliza el sandbox de AWS usado en la práctica anterior.
-1. Sube a la plataforma de Blackboard el enlace de github donde están todas tus respuestas. No olvides colocar tu nombre y apellido antes de subir el enlace de tus respuestas a la plataforma
-1. Cualquier evidencia de copia elimina el examen se informará de la situación a la coordinación.
+2. Realiza una copia de este documento y coloca todas tus respuestas y sube a tu repositorio personal de github en formato markdown. Presenta capturas de pantalla del procedimiento y las explicaciones necesarias. No puntúa si solo se hace la presentación de imágenes.
+3. De preferencia adiciona un video adicional explicando los pasos realizados. Utiliza el sandbox de AWS usado en la práctica anterior.
+4. Sube a la plataforma de Blackboard el enlace de github donde están todas tus respuestas. No olvides colocar tu nombre y apellido antes de subir el enlace de tus respuestas a la plataforma
+5. Cualquier evidencia de copia elimina el examen se informará de la situación a la coordinación.
 
 **S3**
 
@@ -32,11 +32,8 @@ Suponga que su directorio actual es /home/aws\_user (puedes cambiarlo). Envíe l
 **Este comando se utiliza para listar los objetos y los buckets que se encuentran en nuestra cuenta  de Amazon S3. Al ejecutar este comando, se recibirá una lista de los buckets existentes y los objetos almacenados dentro de cada bucket.**
 
 
-1. Haz un bucket a través del siguiente comando mb. aws s3 mb s3://tu\_nombre\_de\_usuario
-
-¿Cuál es la salida?
-
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.005.png)
+2. Haz un bucket a través del siguiente comando mb. aws s3 mb s3://tu\_nombre\_de\_usuario
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Part1.2.png)
 
 **Este comando nos está indicando a la AWS CLI que deseas crear un nuevo bucket en Amazon S3 con un nombre en especifico y en este caso nosotros pusimos como *nombre\_de\_usuario nikolaihuarcaya.*. Primero nosotros tenemos que especificar que es mb, este significa make bucket y el prefijo s3:// indica que se trata de un bucket de S3 Al darle enter al comando, la salida será un mensaje: “make\_bucket:nikolaihuarcaya” . Eso nos da a entender que el bucket se creó correctamente en Amazon S3  con el nombre nikolaihuarcaya**
 
