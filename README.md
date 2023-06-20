@@ -2,7 +2,7 @@
 
 **Departamento Académico de Ingeniería C8280 -Comunicación de Datos y Redes**
 ![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.001.png)![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.002.png)
-
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Imagen1.png)
 
 
 Comunicación de Datos y Redes
@@ -147,19 +147,6 @@ Primeramente nos saldrá error file y para que este bucket esté en público ten
 ![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.019.png)
 
 ![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.020.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
