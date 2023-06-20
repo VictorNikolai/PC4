@@ -52,12 +52,7 @@ Crea un archivo html simple llamado hello.html con el siguiente contenido.**Para
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/cat%20hello_creaci%C3%B3n.png)
 
 **Para que posteriormente dentro de este archivo pongamos lo siguiente :** 
-(<html><body>)
-(<h1>Amazon S3</h1> Hello World!)
-(</body></html>)
-
-
-`             `![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.010.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/cat%20contenido.png)
 
 **Si es que queremos verificar que lo que pusimos en el archivo hello.html se encuentre correctamente solo pondremos el comando cat hello.html**
 
