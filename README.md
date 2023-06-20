@@ -76,17 +76,12 @@ Primeramente nos saldrá error file y para que este bucket esté en público ten
 
    **4.3.-Vamos a “Bloquear acceso público” y hacemos click en Editar para editarlo.**
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.014.png)
-
-
-
-
-
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Desbloquear%20acceso.png)
 
 
 **4.4.-De lo que está marcado en “Bloquear todo el acceso público” lo desmarcamos y ponemos en guardar cambios , tenemos que esperar un momento para que suceda los cambios.**
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.015.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Acceso.png)
 
 **4.5.-Cuando ya se realizó el cambio volvemos a entrar y podemos revisar que se guardó los cambios.**
 
