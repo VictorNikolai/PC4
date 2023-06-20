@@ -173,6 +173,7 @@ A continuación, acceda a
 http://tu\_nombre\_de\_usuario.s3-website-us-east-1.amazonaws.com/2.html. 
 
 ¿Qué viste en el navegador?
+
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Sorry.png)
 Lo que se puede observar es el mensaje que pusimos en el error.html
 ¿Por qué?
