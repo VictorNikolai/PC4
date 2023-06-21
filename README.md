@@ -210,13 +210,18 @@ aws s3api head-object --bucket tu\_nombre\_de\_usuario --key hello.html
 Este comando se utiliza para que se pueda mostrar la interfaz de línea de comandos (CLI) de Amazon Web Services (AWS) y para ejecutar el comando "head-object" en el servicio de almacenamiento en la nube S3.
 
 
+
+
+
+
+
+
 # **Parte 3: Limpieza**
 
-1. Podemos eliminar objetos usando rm. Elimina tu página de índice de la siguiente manera.
-
+9. Podemos eliminar objetos usando rm. Elimina tu página de índice de la siguiente manera.
 aws s3 rm s3://tu\_nombre\_de\_usuario/index.html
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.033.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3%20rm%20s3.png)
 
 ¿Cuál es la salida?
 
@@ -224,35 +229,20 @@ aws s3 rm s3://tu\_nombre\_de\_usuario/index.html
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-1. Y podemos quitar el bucket como un todo. Usa lo siguiente. aws s3 rb s3://tu\_nombre\_de\_usuario --force
+10. Y podemos quitar el bucket como un todo. Usa lo siguiente. aws s3 rb s3://tu\_nombre\_de\_usuario --force
 
 ¿Cuál es la salida? ¿Qué hace --force?
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.034.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20s3%20rb%20s3.png)
 
 **La salida de este código es un mensaje sobre la eliminación de los archivos que se crearon con anterioridad  y el bucket.También hay que agregar que el –force es un comando que se utiliza para forzar la eliminación del bucket con todo sus archivos.** 
 
 
 
 
-EBS
-
+# EBS
 En este laboratorio, se utilizará la CLI de AWS para crear un volumen y una instantánea de Amazon EBS y configurar tu almacenamiento de EBS como un arreglo RAID.
-
-
 # **Parte 1. Crea un nuevo volumen de EBS**
-
 **Primero tenemos que hacer una aclaración ya que hay** 
 
 1. Inicia sesión en el sandbox del curso. Crea un nuevo volumen de EBS con el siguiente comando.
@@ -267,7 +257,7 @@ aws ec2 create-volume --size 1 --region us-east-1
 
 ` `¿Cuál es la salida?
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.035.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20ec2%20create-volume%20.png)
 
 **También hay que mencionar que tenemos que acordarnos del VolumenId ya que lo vamos a necesitar para la siguiente pregunta para que así podamos hacer correr el comando correctamente.**
 
@@ -275,24 +265,7 @@ aws ec2 create-volume --size 1 --region us-east-1
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Utiliza el siguiente comando para ver la información de tu volumen de EBS donde se te proporcionó volume\_id en el resultado del comando anterior.
+2. Utiliza el siguiente comando para ver la información de tu volumen de EBS donde se te proporcionó volume\_id en el resultado del comando anterior.
 
 aws ec2 describe-volume-status --volume-ids volume\_id
 
@@ -300,65 +273,42 @@ aws ec2 describe-volume-status --volume-ids volume\_id
 
 Cómo se mencionó con anterioridad el VolumenId se pegó en la parte donde decir volume\_id , ya que tenemos que reemplazarlo con nuestro id de volumen.
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.036.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20ec2%20describe-volume-status.png)
 
-1. Para crear una instancia de EBS, hazlo siguiente.
-
+3. Para crear una instancia de EBS, hazlo siguiente.
 aws ec2 run-instances --image-id ami-d9a98cb0 --count 1
-
 –instance-type t1.micro –key-name
-
 tu\_nombre\_de\_usuario-key --security-groups tu\_nombre\_de\_usuario
-
 --placement AvailabilityZone=us-east-1c
 
-**Antes de ello tenemos que crear nuestro usuario y los puertos 22 y 80 para que al final podamos correr el comando que nos pide, esto lo podemos hacer gracias a la práctica calificada 3 ya que usamos los comandos necesarios para crear una instancia EBS.![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.037.png)**
 
-
-
-
-
-
-
-
-
-
-
+**Antes de ello tenemos que crear nuestro usuario y los puertos 22 y 80 para que al final podamos correr el comando que nos pide, esto lo podemos hacer gracias a la práctica calificada 3 ya que usamos los comandos necesarios para crear una instancia EBS.
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/instancia%20EBS.png)**
 
 
 
 Ahora creamos el puerto 22 y 80 
-
 **Puerto 22: Es el puerto utilizado por el protocolo SSH (Secure Shell)**
 
-aws ec2 authorize-security-group-ingress --group-name victor\_huarcaya --protocol tcp --port 22 --cidr 0.0.0.0/0![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.038.png)
+aws ec2 authorize-security-group-ingress --group-name victor\_huarcaya --protocol tcp --port 22 --cidr 0.0.0.0/0
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Puerto%2022.png)
 
 
 **Puerto 80 : Ee refiere a HTTP o al servicio Web**
-
 Para el puerto 80 utilizaremos el mismo código que utilizamos para el puerto 22 
-
 aws ec2 authorize-security-group-ingress --group-name victor\_huarcaya --protocol tcp --port 80 --cidr 0.0.0.0/0
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.039.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Puerto%2080.png)
 
 
 
 
+Ahora podemos iniciar sesión de la instancia en ssh. Y lo hacemos con el siguiente código: 
 
+**Describe los grupos de seguridad especificados o todos sus grupos de seguridad**
 
-
-
-
-
-
-
-
-` `Ahora podemos iniciar sesión de la instancia en ssh. Y lo hacemos con el siguiente código: 
-
-**Describe los grupos de seguridad especificados o todos sus grupos de seguridad![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.040.png)**
-
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.041.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/1.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/2.png)
 
 
 
