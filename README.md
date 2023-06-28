@@ -320,11 +320,9 @@ tu\_nombre\_de\_usuario-key --security-groups tu\_nombre\_de\_usuario
 
 --placement AvailabilityZone=us-east-1c
 
-**Ahora recién podremos correr este comando , porque ya cumplimos con los pasos anteriores.![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.042.png)**
+**Ahora recién podremos correr este comando , porque ya cumplimos con los pasos anteriores.![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20ec2%20run-instances%20--image-id.png)**
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.043.png)
-
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.044.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/aws%20ec2%20run-instances%20--image-id%20segunda%20parte.png)
 
 
 Ahora, adjunta el volumen de EBS a la instancia. Esto lo colocas en el directorio
