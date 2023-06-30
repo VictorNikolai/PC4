@@ -333,7 +333,7 @@ aws ec2 attach-volume --volume-id volume\_id --instance-id id\_instance --device
 
 ¿Cuál es la salida?
 
-![](Aspose.Words.05441b4b-0018-4797-bb2f-c8b8e3d57285.045.png)
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/SALIDA.png)
 
 No se pudo por el tema de la localización del archivo .
 
