@@ -403,7 +403,7 @@ donde volume\_id es el id obtenido del paso 1. ¿Cuál es el resultado? Puedes v
 aws ec2 describe-snapshots --snapshot-id snapshot\_id
 ![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/SNAP%20AWS.png)
 
-El snapshot_id debe ser parte de la salida de la instrucción de creación de instantáneas que acaba de ejecutar y lo podemos revisar o verificar con la imagen, obviamente para ello se tiene que cumplir con los pasos anteriores.
+**El snapshot_id debe ser parte de la salida de la instrucción de creación de instantáneas que acaba de ejecutar y lo podemos revisar o verificar con la imagen, obviamente para ello se tiene que cumplir con los pasos anteriores.**
 
 
 El snapshot\_id debe ser parte de la salida de la instrucción de creación de instantáneas que acaba de ejecutar. ¿Cuál es el resultado del comando
@@ -414,13 +414,13 @@ describe-snapshot? Continúa repitiendo este comando hasta que vea que el estado
 1. Dada una instantánea, podemos usarla para crear un nuevo volumen. Ejecuta el siguiente comando. Utiliza el ID de instantánea del paso 5.
 
 aws ec2 create-volume --región us-east-1
-
 --availability-zone us-east-1c
-
 --snapshot-id snapshot\_id
 
 ¿Cuál es la salida? Comprueba el estado del volumen. ¿Qué comando ejecutaste para verificar el estado? ¿Cuál es la salida?
 
+
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/REPITIENDO%201.png)
 
 
 1. Repite el comando de adjuntar volumen del paso 3 para adjuntar este nuevo volumen. El ID de volumen será el que se devolvió al obtener el estado 6, mientras que el ID de instancia es el de tu instancia EC2 que obtuvo en el paso 3.
@@ -430,6 +430,7 @@ aws ec2 attach-volumen --volume-id volume\_id
 --instance-id instance\_id --device /dev/sdg
 
 ¿Cuál es la salida?
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/DE%20NUEVO%20EL%20VOLUMEN.png)
 
 
 1. Vuelve a la ventana de la terminal en la que se tiene ssh en tu instancia EC2. Desde ese terminal, crea un punto de montaje llamado /data2 y monte el nuevo volumen allí. ¿Qué comandos se ejecutó para lograr ambas tareas? Cambia el directorio de su instancia EC2 a /data2. ¿Viste el archivo aws\_user.txt?
