@@ -349,21 +349,33 @@ Con el segundo intento si pudo correr el comando volviendo hacerlo por 10 vez y 
 
 
 
-1. Inicia sesión en la instancia EC2 a través de ssh. En tu instancia EC2, cambie a root. Ahora queremos crear un sistema de archivos en el volumen de EBS (el volumen de EBS es básicamente un dispositivo de almacenamiento en blanco). Luego
+1. Inicia sesión en la instancia EC2 a través de ssh.
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/Ubuntu.png)
+**La salida será una conexión SSH establecida con la instancia EC2. Verás mensajes de autenticación**
 
-necesitamos montar el volumen para que sea accesible. Utiliza los siguientes comandos desde tu EC2. Ten en cuenta que, según el controlador del dispositivo de bloque del kernel, el dispositivo puede estar conectado con un nombre diferente al que ha especificado. Por ejemplo, si especificas un nombre de dispositivo de
 
-/dev/sdf, el kernel podría cambiar el nombre de tu dispositivo a /dev/xvdf, en la mayoría de los casos, la letra final sigue siendo la misma. Ejecuta lsblk en tu terminal para ver tus dispositivos de disco disponibles y tus puntos de montaje (si corresponde) para ayudarte a determinar el nombre de dispositivo correcto que debe usar. Suponga que el kernel cambia el nombre del dispositivo a /dev/xvdf.
+**En tu instancia EC2, cambie a root**
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/sudo%20su.png)
+
+
+Ahora queremos crear un sistema de archivos en el volumen de EBS (el volumen de EBS es básicamente un dispositivo de almacenamiento en blanco).Luego necesitamos montar el volumen para que sea accesible. Utiliza los siguientes comandos desde tu EC2. Ten en cuenta que, según el controlador del dispositivo de bloque del kernel, el dispositivo puede estar conectado con un nombre diferente al que ha especificado. Por ejemplo, si especificas un nombre de dispositivo de /dev/sdf, el kernel podría cambiar el nombre de tu dispositivo a /dev/xvdf, en la mayoría de los casos, la letra final sigue siendo la misma. Ejecuta lsblk en tu terminal para ver tus dispositivos de disco disponibles y tus puntos de montaje (si corresponde) para ayudarte a determinar el nombre de dispositivo correcto que debe usar. Suponga que el kernel cambia el nombre del dispositivo a /dev/xvdf.
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/mkdir%20ex.png)
 
 mkfs -F /dev/xvdf
 
 ¿Cuál es la salida? mkdir /data
+La salida del codigo indica que el comando se ejecutó correctamente y se creó el directorio "data" en el directorio raíz.
 
 mount /dev/xvdf /data cd /data/
 
+
 df
+Es la salida de este código muestra las filas del sistema, su disponibilidad, el % de uso.
+
 
 ¿Cuál es la salida?
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/mkdir%20ex.png)
+
 
 
 # **Parte 2. Instantáneas de EBS**
@@ -371,17 +383,27 @@ df
 
 1. Crea un archivo llamado aws\_user.txt y escribe lo que desees en el archivo. Ahora, veremos cómo crear una copia de seguridad de todo tu volumen de EBS. El primer paso es asegurarte de que todos los datos en memoria se hayan escrito en el volumen (disco), ya que es posible que el archivo creado aún no se haya guardado en el disco. Para forzar que esto suceda, usamos el comando sync (sincronización). En la ventana de tu terminal para su instancia EC2, ejecuta las siguientes instrucciones.
 
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/CD%20UBUNTU.png)
+
+**Creamos el archivo aws_user.txt en el modo root usando cat, obviamente para ello tuvimos que salir y poner sudo su , Y como nos indica el documento usaremos el codigo sync . Como no aparece nada, significa que se ha ejecutado correctamente. Lo que hace sync es que garantiza que los datos en memoria se sincronicen con el disco**
+
+
 root@ip-10-45-185-154:/data# sync
 
 Abre una segunda ventana de terminal en tu máquina virtual. Emite el siguiente comando.
-
 aws ec2 create-snapshot --volume-id volume\_id
-
 --description "Esta es mi instantánea de volumen".
+
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/ID%20VOLUMEN.png)
+
+**Nos sale la descripción del snapshot creado como su ID, el volumen donde esta el snapshot**
 
 donde volume\_id es el id obtenido del paso 1. ¿Cuál es el resultado? Puedes verificar el estado de tu instantánea usando las siguientes instrucciones.
 
 aws ec2 describe-snapshots --snapshot-id snapshot\_id
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/SNAP%20AWS.png)
+
+El snapshot_id debe ser parte de la salida de la instrucción de creación de instantáneas que acaba de ejecutar y lo podemos revisar o verificar con la imagen, obviamente para ello se tiene que cumplir con los pasos anteriores.
 
 
 El snapshot\_id debe ser parte de la salida de la instrucción de creación de instantáneas que acaba de ejecutar. ¿Cuál es el resultado del comando
@@ -398,6 +420,7 @@ aws ec2 create-volume --región us-east-1
 --snapshot-id snapshot\_id
 
 ¿Cuál es la salida? Comprueba el estado del volumen. ¿Qué comando ejecutaste para verificar el estado? ¿Cuál es la salida?
+
 
 
 1. Repite el comando de adjuntar volumen del paso 3 para adjuntar este nuevo volumen. El ID de volumen será el que se devolvió al obtener el estado 6, mientras que el ID de instancia es el de tu instancia EC2 que obtuvo en el paso 3.
