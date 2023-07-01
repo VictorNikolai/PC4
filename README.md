@@ -337,6 +337,18 @@ aws ec2 attach-volume --volume-id volume\_id --instance-id id\_instance --device
 
 No se pudo por el tema de la localización del archivo .
 
+
+**aws ec2 attach-volume --volume-id "vol-0ddf047e915c5932d" --instance-id "i-067db925cfc792853" --device /dev/sdf
+Con el segundo intento si pudo correr el comando volviendo hacerlo por 10 vez y borrando las instancias y reseteando el AWS CloudShell**
+
+![](https://github.com/Nikolai0Huarcaya/PC4/blob/main/Imagenes/dev%20sif.png)
+
+
+
+
+
+
+
 1. Inicia sesión en la instancia EC2 a través de ssh. En tu instancia EC2, cambie a root. Ahora queremos crear un sistema de archivos en el volumen de EBS (el volumen de EBS es básicamente un dispositivo de almacenamiento en blanco). Luego
 
 necesitamos montar el volumen para que sea accesible. Utiliza los siguientes comandos desde tu EC2. Ten en cuenta que, según el controlador del dispositivo de bloque del kernel, el dispositivo puede estar conectado con un nombre diferente al que ha especificado. Por ejemplo, si especificas un nombre de dispositivo de
